@@ -1,7 +1,6 @@
 import {FC} from 'react';
 import {useTheme} from "app/providers/ThemeProvider";
 import {classNames} from "shared/lib/classNames/className";
-import cls from './ThemeSwtitch.module.scss';
 import On from 'shared/assets/icons/On.svg';
 import Off from 'shared/assets/icons/Off.svg';
 import {Theme} from "app/providers/ThemeProvider/lib/ThemeContext";
@@ -16,7 +15,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({className}: ThemeSwitchProps)
 
     return <Button
         theme={ThemeButton.CLEAR}
-        className={classNames(cls.ThemeSwitch, {}, [className])}
+        className={classNames('', {}, [className])}
         onClick={toggleTheme}
     >
 
